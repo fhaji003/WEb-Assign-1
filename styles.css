@@ -30,12 +30,12 @@ footer a {
     text-decoration: underline;
 }
 
-..poll {
+.poll {
     position: absolute;
-    top: 5vh;  
-    right: 2vw; 
-    width: 40vw; 
-    max-width: 90%; 
+    top: 80px;
+    right: 20px;
+    width: 700px;
+    max-width: 90%;
     font-family: Arial, sans-serif;
 }
 
