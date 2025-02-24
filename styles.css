@@ -1,0 +1,63 @@
+
+h1 {
+    text-align: center;
+    font-family: Arial, 'Times New Roman', Times, serif;
+    color: black;
+    background-color: green;
+    font-size: 32px;
+}
+h3 {
+    font-family: Arial, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.home {
+    background-image: url(https://img.freepik.com/free-psd/top-view-travel-objects_23-2151209637.jpg?t=st=1740004495~exp=1740008095~hmac=f3b4f87334db5c641746834cc8bcde71858b3e147c72f8413bca1b6ba04ee8b6&w=1800);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+footer {
+    width: 100%;
+    background-color: white;
+    font-size: 12px;
+    padding: 2px;
+}
+footer a {
+    color: lightblue;
+    text-decoration: underline;
+}
+
+.poll {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 700px;
+    max-width: 90%;
+    font-family: Arial, sans-serif;
+}
+
+.head {
+    color: blue; 
+    text-align: center; 
+    font-size: 32px; 
+    background-color:green;
+}
+
+
+fieldset {
+    width: 90%;
+    max-width: 900px;
+    padding: 10px;
+}
+
+.recommendations {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 700px;
+    max-width: 90%;
+    font-family: Arial, sans-serif;
+}
