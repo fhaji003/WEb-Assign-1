@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>User Information</h1>
+    </div>
+
+    <div>
+        <fieldset><legend><strong>Back to main page</strong></legend>
+            <a href="index.html">Main page</a>
+        </fieldset>
+    </div>
+    
+    <div>
+        <fieldset><legend><strong>User Information</strong></legend>
+            <h4>Dear user, please take a moment to fill out this form.</h4>
+
+            <form method="post" action="mailto:fhaji003@mtroyal.ca">
+            
+                <label>First name:
+                    <input name="first_name" type="text" placeholder="Enter your first name" required autofocus/>
+                </label> 
+                <br>
+
+            
+                <label>Last name:
+                    <input name="last_name" type="text" placeholder="Enter your last name" required/>
+                </label>
+                <br>
+
+
+                <label>Phone number:
+                    <input name="phone" type="text" placeholder="123-456-7890" pattern="\d{3}-\d{3}-\d{4}" required/>
+                </label>
+                <br>
+
+
+            
+                <label>Email:
+                    <input name="email" type="text" pattern="^[a-zA-Z0-9._%+-]+@mtroyal\.ca$"  placeholder="example@mtroyal.ca" required/>
+                </label>
+                <br>
+
+
+                <label>Subject:
+                    <input name="subject" type="text" placeholder="Enter subject" required/>
+                </label>
+                <br>
+
+            
+                <label>Comments: <br/>
+                    <textarea name="comments" type="text" size="90" style="height: 3cm; width: 400px;"  placeholder="Leave any comments" required ></textarea>
+                </label>
+
+            <p>
+                
+                <div class="checkbox-group">
+                    <strong>Pages you liked on our site: </strong> <br/>
+                    <label><input type="checkbox" name="liked-pages" value="dream-destinations"> Dream Destinations</label>
+                    <label><input type="checkbox" name="liked-pages" value="packing-budget"> Packing on a Budget</label>
+                    <label><input type="checkbox" name="liked-pages" value="special-events"> Special Events</label>
+                </div>
+                <br>
+            </p>
+
+            <input type="Submit" value= "Submit" name="Submit" />
+            <input type="reset" value="Clear" name="clear" />
+
+            </form>
+        </fieldset>
+    </div>
+
+</body>
+</html>

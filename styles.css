@@ -39,6 +39,11 @@ footer a {
     font-family: Arial, sans-serif;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> ebc2870f175fa0beb4e7b0c0af813bdc4075f811
 .head {
     color: blue; 
     text-align: center; 
@@ -61,6 +66,37 @@ fieldset {
     max-width: 90%;
     font-family: Arial, sans-serif;
 }
+<<<<<<< HEAD
 .table{
     text-align: center;
+=======
+
+.header {
+    text-align: center;
+    font-family: Arial, 'Times New Roman', Times, serif;
+    color: black;
+    background-color: green;
+    font-size: 32px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgrey;
+    height:100vh;
+    margin: 0;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; 
+    background: lightgrey;
+    
+>>>>>>> ebc2870f175fa0beb4e7b0c0af813bdc4075f811
 }
