@@ -65,18 +65,16 @@ fieldset {
 }
 
 .header {
+    color: white;
+    padding: 20px;
     text-align: center;
-    font-family: Arial, 'Times New Roman', Times, serif;
-    color: black;
-    background-color: green;
-    font-size: 32px;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: lightgrey;
-    height:100vh;
     margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
 .checkbox-group {
@@ -133,5 +131,3 @@ nav a {
     text-decoration: underline;
     color: blue; 
 }
-
-
