@@ -4,117 +4,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Travel Destinations</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <header>
         <h1>Dream Travel Destinations</h1>
     </header>
     
-    <nav>
-        <fieldset><legend><strong>Back to main page</strong></legend>
-            <a href="index.html" class="travel">Main page</a>
-        </fieldset>
-    
-        <fieldset><legend><strong>Top Five Places That We Want to Travel to:</strong></legend>
-        <ul> 
-            <li><a href="#santorini"> Santorini, Greece </a></li>
-            <li><a href="#tokyo">Tokyo, Japan</a></li>
-            <li><a href="#rome">Rome, Italy</a></li>
-            <li><a href="#cape-town">Cape Town, South Africa</a></li>
-            <li><a href="#madrid">Madrid, Spain</a></li>
-            <li><a href="#references">References</a></li>
-        </ul>
-    </fieldset>
-    </nav>
-    
-    <article id="santorini">
-        <section>
-            <fieldset><legend><strong>Santorini, Greece</strong></legend>
-                <figure>
-                    <img src="Images/greece.jpg" alt="The white houses in Fira overlooking the sea during the sunset" width="250" height="150">
-                    <figcaption><em>(12 Best Places to Visit in Greece, 2024)</em></figcaption>
-                </figure>
-                <p>Santorini is one of the most breathtaking places in the world.
-                    We have both seen the famous whitewashed buildings <br> overlooking the sea, and have always wanted to experience visiting them. 
-                    Santorini, Greece is rich in history and culture with <br> <strong>Fira & Oia</strong> being on our bucket list to walk through; 
-                    experiencing charming streets, local markets, and traditional Greek <br> architecture.</p>
+    <div class="content-wrapper">
+        <nav aria-label="Destination navigation">
+            <fieldset>
+                <legend><strong>Back to main page</strong></legend>
+                <a href="index.html" class="travel">Main page</a>
             </fieldset>
-        </section>
-    </article>
-    
-    <article id="tokyo">
-        <section>
-            <fieldset><legend><strong>Tokyo, Japan</strong></legend>
-                <figure>
-                    <img src="Images/tokyo.jpg" alt="Downtown Tokyo during busy hours with lots of buildings" width="250" height="150">
-                    <figcaption><em>(Tokyo Images – Browse 852,066 Stock Photos, Vectors, and Video, n.d.)</em></figcaption>
-                </figure>
-                <p>Tokyo is a city with ultramodern technology, and as our immaculate passion for technology,
-                    we are very interested in visiting <br> Japan, specifically Tokyo. The seasonal beauty Tokyo has is incomparable with any other city. Tokyo changes dramatically <br> with the seasons;
-                    spring for breathtaking cherry blossoms, summer for lively festivals, autumn for stunning foliage, and <br> winter for holiday illuminations.</p>
+        
+            <fieldset>
+                <legend><strong>Top Five Places That We Want to Travel to:</strong></legend>
+                <ul> 
+                    <li><a href="#santorini">Santorini, Greece</a></li>
+                    <li><a href="#tokyo">Tokyo, Japan</a></li>
+                    <li><a href="#rome">Rome, Italy</a></li>
+                    <li><a href="#cape-town">Cape Town, South Africa</a></li>
+                    <li><a href="#madrid">Madrid, Spain</a></li>
+                    <li><a href="#poll">Vote for your favorite</a></li>
+                    <li><a href="#references">References</a></li>
+                </ul>
             </fieldset>
-        </section>
-    </article>
-    
-    <article id="rome">
-        <section>
-            <fieldset><legend><strong>Rome, Italy</strong></legend>
-                <figure>
-                    <img src="Images/rome.jpeg" alt="A picture of Vatican city located in Rome" width="250" height="150">
-                    <figcaption><em>(Auvil, 2017)</em></figcaption>
-                </figure> 
-                <p>Rome is a place where history, art, and culture blend seamlessly with modern life.
-                    Rome is one of the most iconic travel <br> destinations in the world
-                    that offers breathtaking landmarks, rich traditions, and incredible food.</p>
-            </fieldset>
-        </section>
-    </article>
-    
-    <article id="cape-town">
-        <section>
-            <fieldset><legend><strong>Cape Town, South Africa</strong></legend>
-                <figure>
-                    <img src="Images/cape-town.jpg" alt="A picture of Bo-Kaap with mountain views" width="250" height="150">
-                    <figcaption><em>(Editorial Team, 2023b)</em></figcaption>
-                </figure>
-                <p>Cape Town is a melting pot of culture, and its cuisines and breathtaking activities are what stood out to us. 
-                    The beaches, food, and <br> diversity are what we want to experience because Cape Town is an award-winning food and wine city.</p>
-            </fieldset>
-        </section>
-    </article>
-    
-    <article id="madrid">
-        <section>
-            <fieldset><legend><strong>Madrid, Spain</strong></legend>
-                <figure>
-                    <img src="Images/Madrid.jpg" alt="Madrid beaches located in Valencia" width="250" height="150">
-                    <figcaption><em>(Corrigan, 2019)</em></figcaption>
-                </figure>
-                <p>Madrid is the central capital of Spain known for its rich history, passionate soccer culture, and lively nightlife.</p>
-            </fieldset>
-        </section>
-    </article>
-    
-    <div class="poll">
-        <section>
-            <fieldset><legend><strong>Which of our top 5 destinations would you visit first?</strong></legend>
-                <form> 
-                    <label><input type="radio" name="vote"> Santorini, Greece</label><br>
-                    <label><input type="radio" name="vote"> Tokyo, Japan</label><br>
-                    <label><input type="radio" name="vote"> Rome, Italy</label><br>
-                    <label><input type="radio" name="vote"> Cape Town, South Africa</label><br>
-                    <label><input type="radio" name="vote"> Madrid, Spain</label><br>
-                    <h3>Please leave any comments you think will be valuable to us:</h3>
-                    <label>Comments:<br>
-                        <input name="comment" type="text" size="50" style="height: 2cm" placeholder="Your recommendations">
-                    </label>
-                    <br><br>
-                    <input type="submit" value="Submit" name="Submit">
-                    <input type="reset" value="Clear" name="clear">
-                </form>
-            </fieldset>  
-        </section>
+        </nav>
+        
+        <main id="main-content" class="grid-container">
+            <article id="santorini">
+                <fieldset>
+                    <legend><strong>Santorini, Greece</strong></legend>
+                    <figure>
+                        <img src="https://cdn.audleytravel.com/1600/1142/60/8001510-views-in-the-evening-fira.webp" 
+                             alt="Whitewashed buildings of Fira, Santorini overlooking the sea at sunset"
+                             width="250" height="150">
+                        <figcaption><em>Evening view of Fira, Santorini (Audley Travel, 2024)</em></figcaption>
+                    </figure>
+                    <p>Santorini is one of the most breathtaking places in the world. We have both seen the famous whitewashed buildings overlooking the sea, and have always wanted to experience visiting them. Santorini, Greece is rich in history and culture with <strong>Fira & Oia</strong> being on our bucket list to walk through; experiencing charming streets, local markets, and traditional Greek architecture.</p>
+                </fieldset>
+            </article>
+
+            <article id="tokyo">
+                <fieldset>
+                    <legend><strong>Tokyo, Japan</strong></legend>
+                    <figure>
+                        <img src="images\greece.jpg" 
+                             alt="Busy downtown Tokyo street with neon signs and tall buildings"
+                             width="250" height="150">
+                        <figcaption><em>Downtown Tokyo (Adobe Stock, n.d.)</em></figcaption>
+                    </figure>
+                    <p>Tokyo is a city with ultramodern technology, and as our passion for technology, we are very interested in visiting Japan, specifically Tokyo. The seasonal beauty Tokyo has is incomparable with any other city. Tokyo changes dramatically with the seasons; spring for breathtaking cherry blossoms, summer for lively festivals, autumn for stunning foliage, and winter for holiday illuminations.</p>
+                </fieldset>
+            </article>
+
+            <article id="rome">
+                <fieldset>
+                    <legend><strong>Rome, Italy</strong></legend>
+                    <figure>
+                        <img src="images/rome.jpeg" 
+                             alt="St. Peter's Basilica in Vatican City with impressive architecture"
+                             width="250" height="150">
+                        <figcaption><em>St. Peter's Basilica (Auvil, 2017)</em></figcaption>
+                    </figure> 
+                    <p>Rome is a place where history, art, and culture blend seamlessly with modern life. Rome is one of the most iconic travel destinations in the world that offers breathtaking landmarks, rich traditions, and incredible food. Rome is more than just a historical city; it's a place where the past and present coexist in a way that no other place can offer. The passion for soccer runs deep in Rome, making it a dream destination for any soccer fan.</p>
+                </fieldset>
+            </article>
+
+            <article id="cape-town">
+                <fieldset>
+                    <legend><strong>Cape Town, South Africa</strong></legend>
+                    <figure>
+                        <img src="images/cape town.jpg" 
+                             alt="Colorful houses of Bo-Kaap with Table Mountain in the background"
+                             width="250" height="150">
+                        <figcaption><em>Bo-Kaap neighborhood (Zicasso, 2023)</em></figcaption>
+                    </figure>
+                    <p>Cape Town is a melting pot of culture, and its cuisines and breathtaking activities are what stood out to us. The beaches, food, and diversity are what we want to experience because Cape Town is an award-winning food and wine city. The diversity makes it beautiful, and learning about different cultures and diverse groups is something that interests both of us as we both also come from different backgrounds.</p>
+                </fieldset>
+            </article>
+
+            <article id="madrid">
+                <fieldset>
+                    <legend><strong>Madrid, Spain</strong></legend>
+                    <figure>
+                        <img src="Madrid.jpg" 
+                             alt="Sandy beach near Madrid with clear blue water"
+                             width="250" height="150">
+                        <figcaption><em>Beach near Madrid (TripSavvy, 2019)</em></figcaption>
+                    </figure>
+                    <p>Madrid is the central capital of Spain known for its rich history, passionate soccer culture, and lively nightlife. Real Madrid is the most successful soccer team in the world and we have always been their supporters. As we are both in our early 20s, we want to experience the Madrid nightlife that everyone talks about. The food and culinary scenes in Madrid are immaculate, and we have both dreamed of trying the traditional <strong>Tapas</strong> as it's one of the richest and oldest culinary traditions.</p>
+                </fieldset>
+            </article>
+
+            <article id="poll">
+                <fieldset class="poll">
+                    <legend><strong>Which of our top 5 destinations would you visit first?</strong></legend>
+                    <form id="destination-poll">
+                        <fieldset>
+                            <legend class="visually-hidden">Destination preferences</legend>
+                            <div>
+                                <input type="radio" id="vote-santorini" name="vote" value="santorini">
+                                <label for="vote-santorini">Santorini, Greece</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="vote-tokyo" name="vote" value="tokyo">
+                                <label for="vote-tokyo">Tokyo, Japan</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="vote-rome" name="vote" value="rome">
+                                <label for="vote-rome">Rome, Italy</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="vote-capetown" name="vote" value="capetown">
+                                <label for="vote-capetown">Cape Town, South Africa</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="vote-madrid" name="vote" value="madrid">
+                                <label for="vote-madrid">Madrid, Spain</label>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-group">
+                            <label for="user-comments">Please leave any comments you think will be valuable to us:</label>
+                            <textarea id="user-comments" name="comment" placeholder="Your recommendations"></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <input type="submit" value="Submit" name="Submit">
+                            <label for="reset-button">Clear all form fields</label>
+                            <input type="reset" value="Clear" name="clear" id="reset-button">
+                        </div>
+                    </form>
+                </fieldset>
+            </article>
+
+            <article id="references">
+                <fieldset>
+                    <legend><strong>References</strong></legend>
+                    <ul>
+                        <li>
+                            <em>12 Best Places to Visit in Greece. (2024, October 2). Audley Travel.</em>  
+                            <a href="https://www.audleytravel.com/ca/greece/country-guides/top-places-to-visit-in-greece" target="_blank" rel="noopener">
+                                Read more
+                            </a>
+                        </li>
+                        <li>
+                            <em>Tokyo Images – Browse 852,066 stock photos, vectors, and video. (n.d.). Adobe Stock.</em>
+                            <a href="https://stock.adobe.com/search?k=tokyo&asset_id=323459394" target="_blank" rel="noopener">
+                                Read more
+                            </a>
+                        </li>
+                        <li>
+                            <em>Auvil, J. P. (2017, April 4). Rome's Top 10 attractions : Rome :</em>
+                            <a href="https://www.travelchannel.com/destinations/italy/rome/articles/romes-top-10-attractions" target="_blank" rel="noopener">
+                                Read more
+                            </a>
+                        </li>
+                        <li>
+                            <em>Editorial Team. (2023b, May 29). Top 10 things to do in Cape Town. Zicasso</em>
+                            <a href="https://www.zicasso.com/a/africa/south-africa/rg/cape-town/td" target="_blank" rel="noopener">
+                                Read more
+                            </a>
+                        </li>
+                        <li>
+                            <em>Corrigan, D. (2019, June 3). How to Get to the Beach from Madrid. TripSavvy.</em>
+                            <a href="https://www.tripsavvy.com/the-nearest-beach-to-madrid-1643658" target="_blank" rel="noopener">
+                                Read more
+                            </a>
+                        </li>
+                    </ul>
+                </fieldset>
+            </article>
+        </main>
     </div>
 </body>
 </html>

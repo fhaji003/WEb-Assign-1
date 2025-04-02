@@ -4,78 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Information</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>User Information</h1>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <h1>User Information Form</h1>
+    </header>
+
+    <div class="content-wrapper">
+        <nav aria-label="Breadcrumb navigation">
+            <fieldset>
+                <legend><strong>Navigation</strong></legend>
+                <ul>
+                    <li><a href="index.html">Main page</a></li>
+                </ul>
+            </fieldset>
+        </nav>
+
+        <main id="main-content">
+            <fieldset>
+                <legend><strong>Contact Form</strong></legend>
+                <form id="contact-form" method="post" action="mailto:fhaji003@mtroyal.ca" aria-labelledby="form-instructions">
+                    <p id="form-instructions">Please fill out all required fields marked with <span class="required">*</span></p>
+
+                    <div class="form-group">
+                        <label for="first_name">
+                            First name: <span class="required">*</span>
+                        </label>
+                        <input id="first_name" name="first_name" type="text" 
+                               placeholder="Enter your first name" required
+                               aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last_name">
+                            Last name: <span class="required">*</span>
+                        </label>
+                        <input id="last_name" name="last_name" type="text" 
+                               placeholder="Enter your last name" required
+                               aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">
+                            Phone number: <span class="required">*</span>
+                        </label>
+                        <input id="phone" name="phone" type="tel" 
+                               placeholder="123-456-7890" pattern="\d{3}-\d{3}-\d{4}" 
+                               required aria-required="true">
+                        <span class="hint">Format: 123-456-7890</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            Email: <span class="required">*</span>
+                        </label>
+                        <input id="email" name="email" type="email" 
+                               pattern="^[a-zA-Z0-9._%+-]+@mtroyal\.ca$"  
+                               placeholder="example@mtroyal.ca" required
+                               aria-required="true">
+                        <span class="hint">Must be an @mtroyal.ca email</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">
+                            Subject: <span class="required">*</span>
+                        </label>
+                        <input id="subject" name="subject" type="text" 
+                               placeholder="Enter subject" required
+                               aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">
+                            Comments: <span class="required">*</span>
+                        </label>
+                        <textarea id="comments" name="comments" 
+                                  placeholder="Leave any comments" required
+                                  aria-required="true"></textarea>
+                    </div>
+
+                    <fieldset class="checkbox-group">
+                        <legend>Pages you liked on our site:</legend>
+                        <div>
+                            <input type="checkbox" id="dream-destinations" name="liked-pages" value="dream-destinations">
+                            <label for="dream-destinations">Dream Destinations</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="packing-budget" name="liked-pages" value="packing-budget">
+                            <label for="packing-budget">Packing on a Budget</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="special-events" name="liked-pages" value="special-events">
+                            <label for="special-events">Special Events</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <input type="submit" value="Submit" name="Submit">
+                        <label for="reset-button">Clear all form fields</label>
+                        <input type="reset" value="Clear" name="clear" id="reset-button">
+                    </div>
+                </form>
+            </fieldset>
+        </main>
+
+        <footer>
+            <p><em>Contact us for any questions or concerns about your submission.</em></p>
+            <p>&copy; 2025 Travel Adventures. All rights reserved.</p>
+        </footer>
     </div>
-
-    <div>
-    <nav>
-        <fieldset><legend><strong>Back to main page</strong></legend>
-            <a href="index.html" class="travel">Main page</a>
-        </fieldset>
-    </div>
-    </nav>
-    <div class="form-c">
-        <fieldset><legend><strong>User Information</strong></legend>
-            <h4>Dear user, please take a moment to fill out this form.</h4>
-
-            <form method="post" action="mailto:fhaji003@mtroyal.ca">
-            
-                <label>First name:
-                    <input name="first_name" type="text" placeholder="Enter your first name" required autofocus/>
-                </label> 
-                <br>
-
-            
-                <label>Last name:
-                    <input name="last_name" type="text" placeholder="Enter your last name" required/>
-                </label>
-                <br>
-
-
-                <label>Phone number:
-                    <input name="phone" type="text" placeholder="123-456-7890" pattern="\d{3}-\d{3}-\d{4}" required/>
-                </label>
-                <br>
-
-
-            
-                <label>Email:
-                    <input name="email" type="text" pattern="^[a-zA-Z0-9._%+-]+@mtroyal\.ca$"  placeholder="example@mtroyal.ca" required/>
-                </label>
-                <br>
-
-
-                <label>Subject:
-                    <input name="subject" type="text" placeholder="Enter subject" required/>
-                </label>
-                <br>
-
-            
-                <label>Comments: <br/>
-                    <textarea name="comments" type="text" size="90" style="height: 3cm; width: 400px;"  placeholder="Leave any comments" required ></textarea>
-                </label>
-
-            <p>
-                
-                <div class="checkbox-group">
-                    <strong>Pages you liked on our site: </strong> <br/>
-                    <label><input type="checkbox" name="liked-pages" value="dream-destinations"> Dream Destinations</label>
-                    <label><input type="checkbox" name="liked-pages" value="packing-budget"> Packing on a Budget</label>
-                    <label><input type="checkbox" name="liked-pages" value="special-events"> Special Events</label>
-                </div>
-                <br>
-            </p>
-
-            <input type="Submit" value= "Submit" name="Submit" />
-            <input type="reset" value="Clear" name="clear" />
-
-            </form>
-        </fieldset>
-    </div>
-
 </body>
 </html>

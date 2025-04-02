@@ -4,100 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Special Events around the world</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <header>
         <h1>Special Events Around the World</h1>
     </header>
-    <nav>
-    <div>
-        <fieldset><legend><strong>Back to main page</strong></legend>
-            <a href="index.html">Main page</a>
-        </fieldset>
-    </div>
-    <div>
-        <fieldset><legend><strong>Special Event Around the World</strong></legend>
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="3">Top 3 Events We want to travel to.</th>
-                    </tr>
-                    <tr>
-                        <th>Event</th>
-                        <th>Location</th>
-                        <th>Date</th> 
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="#Gion-Matsuri">Gion Matsuri</a></td>
-                        <td>Japan</td>
-                        <td>July 1 - 30</td>
-                    </tr>
-                    <tr>
-                        <td><a href="#Summer-Olympic-Games">Olympic Games</a></td>
-                        <td>Los Angeles, California, USA</td>
-                        <td>July 14 - 30 2028</td>
-                    </tr>
-                    <tr>
-                        <td><a href="#Comic-Con">Comic Con</a></td>
-                        <td>San Diego, California, USA</td>
-                        <td>April 24 - 27</td>
-                    </tr>
-                </tbody>
-            </table>
-        </fieldset>
-    </div>
-    </nav>
     
-    <article id="Gion-Matsuri">
-        <fieldset><legend><strong>Gion Matsuri</strong></legend>
-            <figure>
-                <img src="Images/Gion-Mastsuri.jpg" width="250" height="150" alt="street view of Japan during Gion Matsuri">
-                <figcaption><em>Gion Matsuri festival in Kyoto</em></figcaption>
-            </figure>
-            <p>Gion Matsuri is one of Japan's most famous festivals, held in Kyoto throughout July and centered around Yasaka Shrine. The highlights include the grand Yamaboko Processions on July 17 and 24, where massive, beautifully decorated floats parade through the streets. Leading up to these parades, the Yoiyama Evenings offer a lively atmosphere with food stalls, performances, and illuminated floats. Originally a purification ritual to ward off epidemics, the festival remains deeply rooted in tradition while attracting visitors from all over the world.</p>
-        </fieldset>
-    </article>
-    
-    <article id="Summer-Olympic-Games">
-        <fieldset><legend><strong>Summer Olympic Games</strong></legend>
-            <figure>
-                <img src="Images/summer-olympics.jpg" width="250" height="150" alt="Summer Olympics 2028 logo">
-                <figcaption><em>Los Angeles 2028 Summer Olympics</em></figcaption>
-            </figure>
-            <p>The Summer Olympics is a global multi-sport event held every four years, bringing together athletes from around the world to compete at the highest level. Featuring a wide range of sports, from athletics and swimming to gymnastics and team events, the games promote unity, excellence, and international cooperation. The host city showcases its culture through the opening and closing ceremonies, while the competition fosters records, inspiring moments, and unforgettable achievements.</p>
-        </fieldset>
-    </article>
-    
-    <article id="Comic-Con">
-        <fieldset><legend><strong>Comic Con</strong></legend>
-            <figure>
-                <img src="Images/Comic-Con.jpg" width="250" height="150" alt="Comic Con logo">
-                <figcaption><em>Comic-Con International</em></figcaption>
-            </figure>
-            <p>Comic-Con is a major pop culture convention that celebrates comics, movies, TV shows, gaming, and fandoms from around the world. Held annually in cities like San Diego, it features exciting panels, exclusive previews, celebrity appearances, and cosplay showcases. Fans gather to explore the latest in entertainment, meet creators, and connect with fellow enthusiasts. With its mix of industry reveals and fan-driven events, Comic-Con has become a must-attend celebration of geek culture.</p>
-        </fieldset>
-    </article>
-    
-    <div id="references">
-        <fieldset><legend><strong>References:</strong></legend>
-            <footer>
-                <p>
-                    <em>Writer, Y. M. / Y. S. S. (2023, July 10). Secrets of Kyoto / Kyoto’s Gion Festival Arose From Fear of Curses. Japannews.yomiuri.co.jp.</em>
-                    <a href="https://japannews.yomiuri.co.jp/original/perspectives/20230710-121710/">Read more</a>
-                </p>
-                <p>
-                    <em>Facebook. (2022). Facebook.com.</em>
-                    <a href="https://www.facebook.com/photo.php?fbid=999208618909718&id=100064617677259&set=a.553145130182738">Read more</a>
-                </p>
-                <p>
-                    <em>voltrxlover. (2024, August 16). 2028 Summer Olympics Los Angeles. VOLTRX® - Premium Re-Chargable Electric Shaker Cup.</em>
-                    <a href="https://www.voltrx.com/news/2028-summer-olympics-los-angeles/">Read more</a>
-                </p>
-            </footer>
-        </fieldset>
+    <div class="content-wrapper">
+        <nav aria-label="Event navigation">
+            <div>
+                <fieldset>
+                    <legend><strong>Back to main page</strong></legend>
+                    <a href="index.html">Main page</a>
+                </fieldset>
+            </div>
+            
+            <div>
+                <fieldset>
+                    <legend><strong>Special Event Around the World</strong></legend>
+                    <table>
+                        <caption>Top 3 Events We want to travel to</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Event</th>
+                                <th scope="col">Location</th>
+                                <th scope="col">Date</th> 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#Gion-Matsuri">Gion Matsuri</a></td>
+                                <td>Japan</td>
+                                <td>July 1 - 30</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#Summer-Olympic-Games">Olympic Games</a></td>
+                                <td>Los Angeles, California, USA</td>
+                                <td>July 14 - 30 2028</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#Comic-Con">Comic Con</a></td>
+                                <td>San Diego, California, USA</td>
+                                <td>April 24 - 27</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </div>
+        </nav>
+        
+        <main id="main-content" class="grid-container">
+            <article id="Gion-Matsuri">
+                <fieldset>
+                    <legend><strong>Gion Matsuri</strong></legend>
+                    <figure>
+                        <img src="Images/Gion-Mastsuri.jpg" width="250" height="150" alt="Colorful street view of Kyoto during Gion Matsuri festival with traditional floats">
+                        <figcaption><em>Gion Matsuri festival in Kyoto</em></figcaption>
+                    </figure>
+                    <p>Gion Matsuri is one of Japan's most famous festivals, held in Kyoto throughout July and centered around Yasaka Shrine. The highlights include the grand Yamaboko Processions on July 17 and 24, where massive, beautifully decorated floats parade through the streets. Leading up to these parades, the Yoiyama Evenings offer a lively atmosphere with food stalls, performances, and illuminated floats. Originally a purification ritual to ward off epidemics, the festival remains deeply rooted in tradition while attracting visitors from all over the world.</p>
+                </fieldset>
+            </article>
+            
+            <article id="Summer-Olympic-Games">
+                <fieldset>
+                    <legend><strong>Summer Olympic Games</strong></legend>
+                    <figure>
+                        <img src="Images/summer-olympics.jpg" width="250" height="150" alt="Official logo of Los Angeles 2028 Summer Olympics">
+                        <figcaption><em>Los Angeles 2028 Summer Olympics</em></figcaption>
+                    </figure>
+                    <p>The Summer Olympics is a global multi-sport event held every four years, bringing together athletes from around the world to compete at the highest level. Featuring a wide range of sports, from athletics and swimming to gymnastics and team events, the games promote unity, excellence, and international cooperation. The host city showcases its culture through the opening and closing ceremonies, while the competition fosters records, inspiring moments, and unforgettable achievements.</p>
+                </fieldset>
+            </article>
+            
+            <article id="Comic-Con">
+                <fieldset>
+                    <legend><strong>Comic Con</strong></legend>
+                    <figure>
+                        <img src="Images/Comic-Con.jpg" width="250" height="150" alt="Comic Con International logo with colorful comic book style">
+                        <figcaption><em>Comic-Con International</em></figcaption>
+                    </figure>
+                    <p>Comic-Con is a major pop culture convention that celebrates comics, movies, TV shows, gaming, and fandoms from around the world. Held annually in cities like San Diego, it features exciting panels, exclusive previews, celebrity appearances, and cosplay showcases. Fans gather to explore the latest in entertainment, meet creators, and connect with fellow enthusiasts. With its mix of industry reveals and fan-driven events, Comic-Con has become a must-attend celebration of geek culture.</p>
+                </fieldset>
+            </article>
+            
+            <div id="references">
+                <fieldset>
+                    <legend><strong>References:</strong></legend>
+                    <footer>
+                        <p>
+                            <em>Writer, Y. M. / Y. S. S. (2023, July 10). Secrets of Kyoto / Kyoto's Gion Festival Arose From Fear of Curses. Japannews.yomiuri.co.jp.</em>
+                            <a href="https://japannews.yomiuri.co.jp/original/perspectives/20230710-121710/">Read more</a>
+                        </p>
+                        <p>
+                            <em>Facebook. (2022). Facebook.com.</em>
+                            <a href="https://www.facebook.com/photo.php?fbid=999208618909718&id=100064617677259&set=a.553145130182738">Read more</a>
+                        </p>
+                        <p>
+                            <em>voltrxlover. (2024, August 16). 2028 Summer Olympics Los Angeles. VOLTRX® - Premium Re-Chargable Electric Shaker Cup.</em>
+                            <a href="https://www.voltrx.com/news/2028-summer-olympics-los-angeles/">Read more</a>
+                        </p>
+                    </footer>
+                </fieldset>
+            </div>
+        </main>
     </div>
 </body>
 </html>

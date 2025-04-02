@@ -4,70 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel & Adventure</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="home">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <header>
-        <h1><img id="logo" src="Images/logo.jpg" width="50" height="50" alt="image of a plane going around the world"> Welcome to our Travel Website</h1>
+        <h1><img id="logo" src="Images/logo.jpg" width="50" height="50" alt="Travel Adventures logo - plane circling globe"> Welcome to our Travel Website</h1>
     </header>
 
-    <div>
-        <fieldset><legend><strong>Content:</strong></legend>
-            <p><strong>Explore our website by clicking on the links below:</strong></p>
-            <nav>
+    <div class="content-wrapper">
+        <nav aria-label="Main navigation">
+            <fieldset>
+                <legend><strong>Content:</strong></legend>
+                <p><strong>Explore our website by clicking on the links below:</strong></p>
                 <ul>
                     <li><a href="dream-travel-destinations.html">Dream Travel Destinations</a></li>
                     <li><a href="backpacking-on-a-budget.html">How to Backpack on a Budget</a></li>
                     <li><a href="special-events.html">Special Events Around the World</a></li>
                     <li><a href="user-information-form.html">Contact form</a></li>
                 </ul>
-            </nav>
-        </fieldset>
+            </fieldset>
+        </nav>
+
+        <main id="main-content">
+            <div class="grid-container">
+                <fieldset>
+                    <legend><strong>About Us:</strong></legend>
+                    <p>Fawaz.H<br>  
+                       Arvin.J<br>                  
+                       COMP 2511 - Client Development 
+                       <img id="about-logo" src="images/plane.jpg" width="100" height="100" alt="Cartoon airplane illustration">
+                    </p>
+
+                    <p class="first-letter">Arvin and I are both first-year Computer Information Systems students. We both travel a lot and thought our website 
+                        should revolve around that. We will talk about the places we want to visit in the future, 
+                        how to backpack on a budget (as we are both university students with a tight budget), 
+                        and special festivals around the world that we want to experience.
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>Misc:</strong></legend> 
+                    <p>This is the first website we have both created, and we will be grateful for your feedback.
+                        We have provided a feedback form at the end of our website
+                        for your recommendations on what we can improve on.
+                    </p>
+                </fieldset>
+            </div>
+        </main>
+
+        <footer>
+            <p>
+                <em>Top view over travel objects. (2024, January 23). Freepik. </em>
+                <a href="https://www.freepik.com/free-psd/top-view-travel-objects_137508159.htm">Read more</a>
+            </p>
+            <p>
+                <em>Cartoon Plane Vector Art & Graphics. freevector.com. (2025).</em>
+                <a href="https://www.freevector.com/vector/cartoon-plane">Read more</a>
+            </p>
+            <p>
+                <em>Your Ultimate Guide to Travel Logo Design • Online Logo Maker's Blog. (2017, September 12).</em>
+                <a href="https://www.onlinelogomaker.com/blog/ultimate-guide-travel-logo-design/">Read more</a>
+            </p>
+        </footer>
     </div>
-
-    <main>
-        <div>
-            <fieldset><legend><strong>About Us:</strong></legend>
-                <p>Fawaz.H<br>  
-                   Arvin.J<br>                  
-                   COMP 2511 - Client Development 
-                   <img id="about-logo" src="Images/plane.jpg" width="100" height="100" alt="cartoon plane">
-                </p>
-
-                <p class="first-letter">Arvin and I are both first-year Computer Information Systems students. We both travel a lot and thought our website 
-                    should revolve around that. We will talk about the places we want to visit in the future, 
-                    how to backpack on a budget (as we are both university students with a tight budget), 
-                    and special festivals around the world that we want to experience.
-                </p>
-            </fieldset>
-        </div>
-
-        <div>
-            <fieldset><legend><strong>Misc:</strong></legend> 
-                <p>This is the first website we have both created, and we will be grateful for your feedback.
-                    We have provided a feedback form at the end of our website
-                    for your recommendations on what we can improve on.
-                </p>
-            </fieldset>
-        </div>
-    </main>
-
-    <footer>
-        <p>
-            <em>Top view over travel objects. (2024, January 23). Freepik. </em>
-            <a href="https://www.freepik.com/free-psd/top-view-travel-objects_137508159.htm#fromView=keyword&page=2&position=26&uuid=930b7d00-2751-45d2-87a0-c44061b2ff16&query=Travel+Tourism+Background">
-                Read more
-            </a>
-        </p>
-        <p>
-            <em>Cartoon Plane Vector Art & Graphics. freevector.com. (2025).</em>
-            <a href="https://www.freevector.com/vector/cartoon-plane"> Read more</a>
-        </p>
-        <p>
-            <em>Your Ultimate Guide to Travel Logo Design • Online Logo Maker’s Blog. (2017, September 12). Online Logo Maker’s Blog.</em>
-            <a href="https://www.onlinelogomaker.com/blog/ultimate-guide-travel-logo-design/">Read more</a>
-        </p>
-    </footer>
-
 </body>
 </html>
