@@ -1,4 +1,3 @@
-/* Normalize.css is loaded first */
 @import url('normalize.css');
 
 /* Base Styles */
@@ -142,10 +141,9 @@ footer {
 }
 
 footer a {
-    color: #ffdd57;
+    color: #ffc107;
 }
 
-/* Home Page Specific */
 .home {
     background-image: url('Images/background.jpg');
     background-size: cover;
@@ -159,9 +157,7 @@ footer a {
     gap: 20px;
 }
 
-/* Media Queries */
 @media screen and (min-width: 590px) {
-    /* Medium devices */
     nav ul {
         display: flex;
         justify-content: center;
@@ -181,7 +177,6 @@ footer a {
 }
 
 @media screen and (min-width: 790px) {
-    /* Large devices */
     body {
         background-color: #e0e0e0;
     }
@@ -200,5 +195,35 @@ footer a {
     
     nav ul {
         justify-content: flex-start;
+    }
+}
+
+body {
+    overflow-x: hidden; 
+    max-width: 100vw;  
+}
+
+fieldset, .grid-container, table, form {
+    max-width: 100%;
+    box-sizing: border-box; 
+}
+
+img, figure, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+.grid-container {
+    grid-template-columns: 1fr; 
+}
+
+@media (min-width: 590px) {
+    .grid-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); 
     }
 }
